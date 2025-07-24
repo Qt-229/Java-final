@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Photo Gallery</title>
+  <style>
+    .gallery { display: flex; gap: 10px; }
+    figure { border: 1px solid #ccc; padding: 5px; }
+    #main-image { width: 400px; height: 300px; background-size: cover; display: flex; align-items: center; justify-content: center; font-size: 2em; border: 2px solid #444;}
+    .thumb-img { width: 80px; height: 60px; object-fit: cover; cursor: pointer; }
+  </style>
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <h1>Accessible Interactive Photo Gallery</h1>
+  <div id="main-image">Hover or Focus a Thumbnail</div>
+  <div class="gallery" id="gallery">
+    <figure>
+      <img class="thumb-img" src="images/cat.jpg" alt="Cat lying on a sofa">
+    </figure>
+    <figure>
+      <img class="thumb-img" src="images/dog.jpg" alt="Dog playing in the park">
+    </figure>
+    <figure>
+      <img class="thumb-img" src="images/bird.jpg" alt="Parrot perched on a branch">
+    </figure>
+    <figure>
+      <img class="thumb-img" src="images/flower.jpg" alt="Bright sunflower in bloom">
+    </figure>
+    <figure>
+      <img class="thumb-img" src="images/car.jpg" alt="Vintage red car at sunset">
+    </figure>
+    <figure>
+      <img class="thumb-img" src="images/mountain.jpg" alt="Snowy mountain peak with blue sky">
+    </figure>
+  </div>
+</body>
+</html>
